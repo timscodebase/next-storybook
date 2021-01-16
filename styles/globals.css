@@ -1,0 +1,93 @@
+:root {
+  /*  All Helen's Variables */
+  --helens-hair-color: #2f1d0f;
+  --helens-eye-color: #402816;
+
+  /*  Helen in HeHauls' Variables */
+  --helen-in-hehauls-width: calc(100vw * 0.8);
+  --helen-in-hehauls-height: calc(var(--helen-in-hehauls-width) * 1.8);
+  --helen-in-hehauls-skin-color: #bf9f87;
+  --helen-in-hehauls-skin-color-darker: #aa8970;
+  --helen-in-hehauls-head-width: calc(var(--helen-in-hehauls-width) * 0.23);
+  --helen-in-hehauls-head-height: calc(var(--helen-in-hehauls-width) * 0.2);
+  --helen-in-hehauls-shirt-color: #c000c3;
+  --helen-in-hehauls-hehauls-color: #020079;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Mountains+of+Christmas:wght@700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Arvo', serif, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  background-color: rgb(244, 10, 10);
+}
+
+.wrapper {
+  min-height: 100vh;
+  margin: 0 auto;
+  color: #eee;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.end-wrapper {
+  display: grid;
+  max-width: 370px;
+  /* min-height: 100vh; */
+  margin: 0 auto;
+  color: #eee;
+  /* padding: 1.5rem;
+  padding-top: 0.5rem; */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 4px;
+}
+h1 span {
+  display: block;
+  font-size: 6rem;
+  letter-spacing: 18px;
+  margin-top: -12px;
+}
+
+h3 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+.image {
+  border-radius: 20px;
+}

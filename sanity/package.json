@@ -1,0 +1,36 @@
+{
+  "name": "unfinishedstory",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Tim Smith <gonad2019@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "test": "sanity check",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.0.9",
+    "@sanity/components": "^2.0.9",
+    "@sanity/core": "^2.0.9",
+    "@sanity/default-layout": "^2.0.9",
+    "@sanity/default-login": "^2.0.9",
+    "@sanity/desk-tool": "^2.0.9",
+    "@sanity/vision": "^2.0.9",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "sanity-plugin-markdown": "^1.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:timscodebase/unfinished-story-2020.git"
+  }
+}
