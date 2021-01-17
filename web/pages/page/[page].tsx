@@ -69,6 +69,7 @@ export default function Page({ numberOfPages, pageData, markdown }: AppProps) {
                 {...client.config()}
               />
             </div>
+
             {renderedMarkdown && (
               <div className="end-wrapper">{renderedMarkdown}</div>
             )}
