@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Snowflakes from '../components/SnowFlakes'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
@@ -52,7 +51,6 @@ export default function Home() {
           exit="exit"
           variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
         >
-          <Snowflakes />
           <div className={styles.container}>
             <h1>
               The Unfinished <span className={styles.largeText}>Story</span>

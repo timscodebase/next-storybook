@@ -2,10 +2,13 @@ const client = require('./client')
 
 module.exports = {
   target: 'serverless',
+  images: {
+    domains: ['cdn.sanity.io'],
+  },
   exportPathMap: async function (defaultPathMap) {
     const paths = await client
       .fetch('*[_type == "page" && defined(page)]')
-      .then((data) =>
+      .then(data =>
         data.reduce(
           (acc, page) => ({
             '/': { page: '/' },
@@ -16,7 +19,6 @@ module.exports = {
         ),
       )
       .catch(console.error)
-    console.log(paths)
     return paths
   },
   webpack(config, options) {
