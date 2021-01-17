@@ -3,7 +3,7 @@ import { AnimatePresence } from 'framer-motion'
 
 import '../styles/globals.css'
 
-export default function MyApp({ Component, pageProps, router }: AppProps) {
+export default function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Head>

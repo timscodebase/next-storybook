@@ -21,7 +21,7 @@ function urlFor(source) {
   return imageUrlBuilder(client).image(source)
 }
 
-export default function Page({ numberOfPages, pageData, markdown }: AppProps) {
+export default function Page({ numberOfPages, pageData, markdown }) {
   const { alt, body = [], mainImage = '', page } = pageData
   const router = useRouter()
 
@@ -100,12 +100,13 @@ const pageQuery = groq`*[_type == "page" && page == $page][0]{
   markdown
 }`
 
-export const getServerSideProps: GetServerSideProps = async context => {
+export const getServerSideProps = async context => {
   let { page = '' } = context.query
-  const pageNumber: number = parseInt(page)
+  
+  page = parseInt(page)
 
   const numberOfPages = await client.fetch(numberOfPagesQuery)
-  const pageData = await client.fetch(pageQuery, { page: pageNumber })
+  const pageData = await client.fetch(pageQuery, page)
   const markdown = await renderToString(pageData.markdown)
 
   return { props: { numberOfPages, pageData, markdown } }
